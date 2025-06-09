@@ -1,0 +1,57 @@
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    /* căn giữa ngang */
+    align-items: center;
+    /* căn giữa dọc */
+    background-color: #f0f0f0;
+    font-family: sans-serif;
+}
+
+.header {
+    text-align: center;
+}
+
+.keyboard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.key {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border: 2px solid black;
+    border-radius: 7px;
+    align-items: center;
+    width: 75px;
+    padding: 10px;
+    transition: all 0.1s;
+
+    h2{
+        margin: 1px;
+    }
+
+    p, span {
+        text-transform: uppercase;
+    }
+
+    span {
+        color: rebeccapurple;
+        font-size: 12px;
+        font-weight: 600;
+    }
+}
+
+.playing{
+    transform: scale(1.1);
+    border-color: blue;
+    box-shadow: 0 0 10px blue;
+}
