@@ -1,0 +1,44 @@
+@charset "UTF-8";
+html,
+body {
+  margin: 0;
+  height: 100%;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  /* căn giữa ngang */
+  align-items: center;
+  /* căn giữa dọc */
+  background-color: #f0f0f0;
+  font-family: sans-serif;
+}
+body .hand {
+  position: absolute;
+  left: 50%;
+  width: 6px;
+  height: 140px;
+  top: 10px;
+  background-color: blue;
+  transform-origin: 50% 100%;
+  transform: rotate(90deg);
+  transition: all 0.1s;
+  transition-timing-function: cubic-bezier(0, 1.72, 0.58, 1);
+}
+body .clock {
+  width: 300px;
+  height: 300px;
+  background-color: red;
+  border-radius: 50%;
+  margin: 0 auto;
+  position: relative;
+}
+body .clock .hour {
+  background-color: yellow;
+}
+body .clock .minute {
+  background-color: aliceblue;
+}
+
+/*# sourceMappingURL=styles.css.map */
