@@ -1,0 +1,59 @@
+:root {
+    --base-color: #f70429;
+    --base-padding: 0px;
+    --base-blur: 0px;
+
+    height: 100%;
+
+    html,
+    body {
+        margin: 0;
+        height: 100%;
+        font-family: sans-serif;
+    }
+
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        .title {}
+
+        .content {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+
+            .changeAble {
+                padding: var(--base-padding);
+                filter: blur(var(--base-blur));
+                background-color: var(--base-color);
+            }
+
+            .changeAble-color {
+                color: var(--base-color);
+            }
+
+            .setting {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                gap: 15px;
+            }
+
+            .image-section {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+
+                .image {
+                    width: 50%;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,49 @@
+:root {
+  --base-color: #f70429;
+  --base-padding: 0px;
+  --base-blur: 0px;
+  height: 100%;
+}
+:root html,
+:root body {
+  margin: 0;
+  height: 100%;
+  font-family: sans-serif;
+}
+:root body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+:root body .content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+:root body .content .changeAble {
+  padding: var(--base-padding);
+  filter: blur(var(--base-blur));
+  background-color: var(--base-color);
+}
+:root body .content .changeAble-color {
+  color: var(--base-color);
+}
+:root body .content .setting {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+:root body .content .image-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+:root body .content .image-section .image {
+  width: 50%;
+}
+
+/*# sourceMappingURL=style.css.map */
