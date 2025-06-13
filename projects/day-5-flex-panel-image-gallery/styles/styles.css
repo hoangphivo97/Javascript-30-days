@@ -1,0 +1,73 @@
+body,
+html {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  font-family: sans-serif;
+}
+body .panels {
+  min-height: 100vh;
+  display: flex;
+  overflow: hidden;
+  flex: 1;
+}
+body .panels .panel {
+  text-align: center;
+  align-items: center;
+  flex-direction: column;
+  font-size: 20px;
+  background-size: cover;
+  background-position: center;
+  color: white;
+  display: flex;
+  justify-content: center;
+  flex: 1;
+  transition: font-size 0.7s cubic-bezier(0.61, -0.19, 0.7, -0.11), flex 0.7s cubic-bezier(0.61, -0.19, 0.7, -0.11), background 0.2s;
+}
+body .panels .panel p {
+  text-transform: uppercase;
+  text-shadow: 0 0 4px rgba(0, 0, 0, 0.72), 0 0 14px rgba(0, 0, 0, 0.45);
+  font-size: 2em;
+}
+body .panels .panel.open {
+  flex: 5;
+  font-size: 40px;
+}
+body .panels .panel > * {
+  flex: 1 0 auto;
+  margin: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.5s;
+}
+body .panels .panel > *:first-child {
+  transform: translateY(-100%);
+}
+body .panels .panel > *:last-child {
+  transform: translateY(100%);
+}
+body .panels .panel.open-active > *:first-child, body .panels .panel.open-active > *:last-child {
+  transform: translateY(0);
+}
+body .panels .panel1 {
+  background-image: url("../images/anh1.jpg");
+}
+body .panels .panel2 {
+  background-image: url("../images/anh7.jpg");
+}
+body .panels .panel3 {
+  background-image: url("../images/anh6.jpg");
+}
+body .panels .panel4 {
+  background-image: url("../images/anh4.jpg");
+}
+body .panels .panel5 {
+  background-image: url("../images/anh5.jpg");
+}
+
+/*# sourceMappingURL=styles.css.map */
