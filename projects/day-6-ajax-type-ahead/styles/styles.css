@@ -1,0 +1,32 @@
+html,
+body {
+  margin: 0;
+  height: 100%;
+  font-family: sans-serif;
+}
+
+body {
+  align-items: center;
+  place-self: center;
+  height: 100vh;
+}
+body .hl {
+  background-color: yellow;
+}
+body .search-section input {
+  width: 250px;
+  height: 50px;
+  font-size: 20px;
+}
+body .list {
+  max-height: 100vh;
+}
+body .list .item {
+  display: flex;
+  justify-content: space-between;
+}
+body .list .suggestions {
+  padding: 0;
+}
+
+/*# sourceMappingURL=styles.css.map */

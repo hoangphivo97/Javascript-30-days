@@ -1,0 +1,37 @@
+html,
+body {
+    margin: 0;
+    height: 100%;
+    font-family: sans-serif;
+}
+
+body {
+    align-items: center;
+    place-self: center;
+    height: 100vh;
+
+    .hl{
+        background-color: yellow;
+    }
+
+    .search-section {
+        input {
+            width: 250px;
+            height: 50px;
+            font-size: 20px;
+        }
+    }
+
+    .list {
+        max-height: 100vh;
+
+        .item {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .suggestions {
+            padding: 0;
+        }
+    }
+}
